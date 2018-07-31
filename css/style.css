@@ -1,0 +1,113 @@
+* {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+#main {
+    width: 100%;
+    height: 100%;
+}
+#head {
+    height: 75px;
+    width: 100%;
+    background-color: #0055ff;
+    position: fixed;
+    opacity: .7;
+}
+.name {
+    float: left;
+    width: auto;
+    height: 75px;
+}
+.name h1 {
+    font-size: 60px;
+}
+.logo {
+    background-image: url(../img/book.png)
+}
+#contact {
+    float: right;
+    width: auto;
+    text-align: right;
+    padding-top: 10px;
+    margin: 0;
+}
+#contact li {
+    list-style-type: none;
+    display: inline;
+    cursor: pointer;
+}
+#nav {
+    font: normal 15px Verdana, Arial, sans-serif;
+    width: 150px;
+    float: left;
+    position: fixed;
+    height: 300px;
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #404040;
+    opacity: .8;
+    border: #222222;
+}
+
+#nav-child {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#nav li {
+    list-style-type: none;
+}
+
+
+
+
+/*Classes*/
+.navbuttons {
+    list-style: none;
+    border: none;
+    background-color: #404040;
+    font-size: 30;
+    cursor: pointer;
+
+}
+.navbuttons:hover {
+    background-color: #898787
+}
+/* Body */
+#bg1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/bg1.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#about {
+    background-color: #fff;
+    width: auto;
+    height: 500px;
+}
+#bg2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+#history {
+    background-color: #fff;
+    width: auto;
+    height: 500px;
+}
+#bg3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/bg3.jpg);
+    background-size: cover; 
+    background-attachment: fixed; 
+}
