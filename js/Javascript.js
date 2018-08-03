@@ -14,11 +14,17 @@ r(function() {
     }
 
     window.sr = ScrollReveal();
-    sr.reveal(document.getElementById('Github'));
-    sr.reveal(document.getElementById('Home-icon'));
-    sr.reveal(document.getElementById('Email-logo'));
-    sr.reveal(document.getElementById('resume-logo'));
-    sr.reveal(document.getElementById('linkedin-logo'));
-    sr.reveal(document.getElementById('contact'));
-    sr.reveal(document.getElementById('Fade-in-overlay'));
 });
+(function ($) {
+    $.fn.replaceClass = function (pFromClass, pToClass) {
+        return this.removeClass(pFromClass).addClass(pToClass);
+    };
+}(jQuery));
+$(window).scroll(function () {
+    if ($(document).scrollTop() > 100) {
+        $('.head').replaceClass('head', 'navfixed')
+    }
+    else {
+        $('.navfixed').replaceClass('navfixed', 'head');
+    }
+})

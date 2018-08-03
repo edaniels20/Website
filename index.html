@@ -1,63 +1,69 @@
 <html>
     <head>
-        <link href='css/style.css' rel='stylesheet'/>
+        <link rel='stylesheet' type='text/css' href='css/style.css' />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.4.0/scrollreveal.min.js"></script>
-        <script src='js/Javascript.js' type='text/javascript'></script>
+        <script src='https://code.jquery.com/jquery-git.min.js'></script>
+        <script src='Js/Javascript.js' type='text/javascript'></script>
     </head>
     <body>
-        <div id="nav">
-                <div id="nav-child">
-                    <ul>Navigation
-                        <li id="home">
-                            <button class=navbuttons>Home</button>
-                        </li>
-                        <li>
-                            <button class=navbuttons>About</button>
-                        </li>
-                        <li>
-                            <button class=navbuttons>History</button>
-                        </li>
-                        <li>
-                            <button class=navbuttons>Helpful</button>
-                        </li>
-                    </ul>
-                </div>
-            </div><!--Nav-->
-        <div id="main"> <!-- This is the main container -->
-            <div id="head"> <!-- Head -->
-                <div class="name">
-                    <h1>Ethan Daniels</h1>
-                </div>
-                <div class="logo">
-                    
-                </div>
-                <div id="contact">
+        <div class='nav-parent' onmouseover='navShow()'>
+            <h1>Navigation</h1>
+                <div class="nav-child">
                     <ul>
-                        <li><a id='Github' title='GitHub' href='https://github.com/edaniels20?tab=repositories' target='_blank'><img src='img/github.png'  width='50' height='50'  /></a></li>
-                        <li><a id='Linkedin' title='Linkedin' href='https://www.linkedin.com/in/ethan-daniels-bb1351169/' target='_blank'><img src='img/linkedin-logo.png'  width='50' height='50'  /></a></li>
-                        <li><a id='Email'  title='Email'><img src='img/email.png'  width='50' height='50'  /></a></li>
-                        <li><a id='Resume' title='Resume' href='https://github.com/edaniels20?tab=repositories' target='_blank'><img src='img/resume-image.png'  width='50' height='50'  /></a></li>
+                        <a href='#bg1'><li id="home" onmouseover='navShow()'>
+                            <button class=navbuttons>Home</button>
+                        </li></a>
+                        <a href='#about'><li>
+                            <button class=navbuttons>About</button>
+                        </li></a>
+                        <a href='#history'><li onmouseover='navShow()'>
+                            <button class=navbuttons>History</button>
+                        </li></a>
+                        <a href='#helpful'><li onmouseover='navShow()'>
+                            <button class=navbuttons>Helpful</button>
+                        </li></a>
                     </ul>
-                </div>
-            </div><!--Head-->
+                </div><!--Nav Child-->
+            </div><!--Nav Parent-->
+        <div id="main"> <!-- This is the main container -->
             <div id="body"> <!-- Body -->
-                <div id="bg1">
-                
+                <div class="bg1">
+                        <div class="head"> <!-- Head -->
+                            <div class="name">
+                                <h1>Ethan Daniels</h1>
+                            </div>
+                            <div class="logo">
+                                
+                            </div>
+                            <div class="contact">
+                                <ul>
+                                    <li><a title='GitHub' href='https://github.com/edaniels20?tab=repositories' target='_blank'><img src='img/github.png'  width='50' height='50'  /></a></li>
+                                    <li><a title='Linkedin' href='https://www.linkedin.com/in/ethan-daniels-bb1351169/' target='_blank'><img src='img/linkedin-logo.png'  width='50' height='50'  /></a></li>
+                                    <li><a title='Email'><img src='img/email.png'  width='50' height='50'  /></a></li>
+                                    <li><a title='Resume' href='https://docs.google.com/document/d/19sg5uXPXLuxs_Kr7OfrYWFJBnIHM8cz6AvBhn1hdEW4/edit#' target='_blank'><img src='img/resume-image.png'  width='50' height='50'  /></a></li>
+                                </ul>
+                            </div>
+                        </div><!--Head-->
+                    <div class="bg1-text">
+                        <h1>Ethan Daniels</h1>
+                        <p>This is a website telling my short story about myself and my qualifications</p>
+                    </div>
                 </div>
-                <div id="about">
+                <div id='about' class="about">
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="bg2">
 
                 </div>
-                <div id="bg2">
+                <div id='history' class="history">
 
                 </div>
-                <div id="history">
+                <div id='bg3' class="bg3">
 
                 </div>
-                <div id="bg3">
-
-                </div>
-                <div id="shout-outs">
-
+                <div id="helpful" class='helpful'>
                 </div><!--S/O-->
             </div><!--Body-->
         </div><!--Container-->
