@@ -10,7 +10,7 @@ r(function() {
         textArea.select();
         document.execCommand('copy');
         document.body.removeChild(textArea);
-        alert('Copied To clipboard')
+        alert('Copied To clipboard');
     }
 
     window.sr = ScrollReveal();
@@ -22,7 +22,7 @@ r(function() {
 }(jQuery));
 $(window).scroll(function () {
     if ($(document).scrollTop() > 100) {
-        $('.head').replaceClass('head', 'navfixed')
+        $('.head').replaceClass('head', 'navfixed');
     }
     else {
         $('.navfixed').replaceClass('navfixed', 'head');
