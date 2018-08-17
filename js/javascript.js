@@ -2,7 +2,7 @@
 
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
 r(function() {
-    document.getElementsByClassName('email').onclick = function() {
+    document.getElementByClass('email').onclick = function() {
         var textArea = document.createElement("textarea");
         textArea.value = 'e.daniels20@live.com';
         document.body.appendChild(textArea);
